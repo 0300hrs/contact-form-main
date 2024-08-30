@@ -24,57 +24,65 @@
     <div class="container">
       <h1>Contact Us</h1>
       <form action="">
-        <div class="input-part">
-          <label for="first-name">First Name *</label>
-          <input type="text" name="first-name" required />
-          <span class="warning">This field is required</span>
+        <div class="double">
+          <div class="input-part">
+            <label for="first-name"
+              >First Name <span class="star">*</span></label
+            >
+            <input type="text" name="first-name" required />
+            <span class="warning">This field is required</span>
+          </div>
+
+          <div class="input-part">
+            <label for="last-name">Last Name <span class="star">*</span></label>
+            <input type="text" name="last-name" required />
+            <span class="warning">This field is required</span>
+          </div>
         </div>
 
         <div class="input-part">
-          <label for="last-name">Last Name *</label>
-          <input type="text" name="last-name" required />
-          <span class="warning">This field is required</span>
-        </div>
-
-        <div class="input-part">
-          <label for="email">Email Address *</label>
+          <label for="email">Email Address <span class="star">*</span></label>
           <input type="text" name="email" required />
           <span class="warning">This field is required</span>
         </div>
         <!-- css done -->
         <div class="radio">
-          <legend>Query Type *</legend>
-          <label for="enquiry">
-            <input
-              type="radio"
-              name="query-type"
-              id="enquiry"
-              value="enquiry"
-              checked
-            />
-            <span>General Enquiry</span>
-          </label>
-          <label for="request">
-            <input
-              type="radio"
-              name="query-type"
-              id="request"
-              value="request"
-            />
-            <span>Support Request</span>
-          </label>
+          <legend>Query Type <span class="star">*</span></legend>
+          <div class="double">
+            <label for="enquiry">
+              <input
+                type="radio"
+                name="query-type"
+                id="enquiry"
+                value="enquiry"
+                checked
+              />
+              <span>General Enquiry</span>
+            </label>
+            <label for="request">
+              <input
+                type="radio"
+                name="query-type"
+                id="request"
+                value="request"
+              />
+              <span>Support Request</span>
+            </label>
+          </div>
+
           <span class="warning">Please select a query type</span>
         </div>
 
         <div class="message input-part">
-          <label for="message">Message *</label>
+          <label for="message">Message <span class="star">*</span></label>
           <textarea name="message" id="message" required></textarea>
         </div>
 
         <div>
           <input type="checkbox" name="consent" id="consent" />
           <label for="consent"
-            >I consent to being contacted by the team *</label
+            >I consent to being contacted by the team
+            <span class="star">*</span></label
           >
           <span class="warning"
             >To submit this form, please consent to being contacted</span

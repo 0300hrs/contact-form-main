@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="import"
+      href="./assets/fonts/Karla-Italic-VariableFont_wght.ttf"
+    />
+    <link rel="import" href="./assets/fonts/Karla-VariableFont_wght.ttf" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form action="">
+        <div class="input-part">
+          <label for="first-name">First Name *</label>
+          <input type="text" name="first-name" required />
+          <span class="warning">This field is required</span>
+        </div>
+
+        <div class="input-part">
+          <label for="last-name">Last Name *</label>
+          <input type="text" name="last-name" required />
+          <span class="warning">This field is required</span>
+        </div>
+
+        <div class="input-part">
+          <label for="email">Email Address *</label>
+          <input type="text" name="email" required />
+          <span class="warning">This field is required</span>
+        </div>
+        <!-- css done -->
+        <div class="radio">
+          <legend>Query Type *</legend>
+          <label for="enquiry">
+            <input
+              type="radio"
+              name="query-type"
+              id="enquiry"
+              value="enquiry"
+              checked
+            />
+            <span>General Enquiry</span>
+          </label>
+          <label for="request">
+            <input
+              type="radio"
+              name="query-type"
+              id="request"
+              value="request"
+            />
+            <span>Support Request</span>
+          </label>
+          <span class="warning">Please select a query type</span>
+        </div>
+
+        <div class="message input-part">
+          <label for="message">Message *</label>
+          <textarea name="message" id="message" required></textarea>
+        </div>
+
+        <div>
+          <input type="checkbox" name="consent" id="consent" />
+          <label for="consent"
+            >I consent to being contacted by the team *</label
+          >
+          <span class="warning"
+            >To submit this form, please consent to being contacted</span
+          >
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="modal">
+        <div class="flex-row">
+          <img src="./assets/images/icon-success-check.svg" alt="success" />
+          <h3>Message Sent!</h3>
+        </div>
+
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </div>
+  </body>
+</html>

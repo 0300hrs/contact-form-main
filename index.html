@@ -17,6 +17,7 @@
     />
     <link rel="import" href="./assets/fonts/Karla-VariableFont_wght.ttf" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
 
     <title>Frontend Mentor | Contact form</title>
   </head>
@@ -29,20 +30,20 @@
             <label for="first-name"
               >First Name <span class="star">*</span></label
             >
-            <input type="text" name="first-name" required />
+            <input type="text" name="firstname" id="firstName" required />
             <span class="warning">This field is required</span>
           </div>
 
           <div class="input-part">
             <label for="last-name">Last Name <span class="star">*</span></label>
-            <input type="text" name="last-name" required />
+            <input type="text" name="last-name" id="lastName" required />
             <span class="warning">This field is required</span>
           </div>
         </div>
 
         <div class="input-part">
           <label for="email">Email Address <span class="star">*</span></label>
-          <input type="text" name="email" required />
+          <input type="text" name="email" id="email" required />
           <span class="warning">This field is required</span>
         </div>
         <!-- css done -->
@@ -88,16 +89,8 @@
             >To submit this form, please consent to being contacted</span
           >
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="checkData()">Submit</button>
       </form>
-      <div class="modal">
-        <div class="flex-row">
-          <img src="./assets/images/icon-success-check.svg" alt="success" />
-          <h3>Message Sent!</h3>
-        </div>
-
-        <p>Thanks for completing the form. We'll be in touch soon!</p>
-      </div>
     </div>
   </body>
 </html>

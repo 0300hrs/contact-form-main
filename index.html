@@ -27,24 +27,24 @@
       <form action="">
         <div class="double">
           <div class="input-part">
-            <label for="first-name"
+            <label for="firstname"
               >First Name <span class="star">*</span></label
             >
             <input type="text" name="firstname" id="firstName" required />
-            <span class="warning">This field is required</span>
+            <span id="firstNameError error"></span>
           </div>
 
           <div class="input-part">
-            <label for="last-name">Last Name <span class="star">*</span></label>
-            <input type="text" name="last-name" id="lastName" required />
-            <span class="warning">This field is required</span>
+            <label for="lastname">Last Name <span class="star">*</span></label>
+            <input type="text" name="lastname" id="lastName" required />
+            <span id="lastNameError error"></span>
           </div>
         </div>
 
         <div class="input-part">
           <label for="email">Email Address <span class="star">*</span></label>
           <input type="text" name="email" id="email" required />
-          <span class="warning">This field is required</span>
+          <span id="emailError error"></span>
         </div>
         <!-- css done -->
         <div class="radio">
@@ -71,12 +71,13 @@
             </label>
           </div>
 
-          <span class="warning">Please select a query type</span>
+          <span id="queryError error"></span>
         </div>
 
         <div class="message input-part">
           <label for="message">Message <span class="star">*</span></label>
           <textarea name="message" id="message" required></textarea>
+          <span id="messageError error"></span>
         </div>
 
         <div>
@@ -85,11 +86,9 @@
             >I consent to being contacted by the team
             <span class="star">*</span></label
           >
-          <span class="warning"
-            >To submit this form, please consent to being contacted</span
-          >
+          <span id="consentError error"></span>
         </div>
-        <button type="submit" onclick="checkData()">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   </body>
